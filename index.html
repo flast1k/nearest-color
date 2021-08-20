@@ -84,7 +84,7 @@
         <div class="wrapper">
             <div class="left-side">
                 <h3>Nearest color result</h3>
-                <input style="width: 100px" disabled type="text" name="nearest-color-code" id="color-code"/>
+                <input style="width: 300px" disabled type="text" name="nearest-color-code" id="color-code"/>
                 <form>
                     <h3>Your color</h3>
                     <input placeholder="#000" type="text" name="color" />
@@ -148,7 +148,7 @@
                 actualColorElement.style.backgroundColor = colorPicker.value;
                 const nearestColor = getColor(colorPicker.value);
                 nearestColorElement.style.backgroundColor = nearestColor.value;
-                colorCodeElement.value = nearestColor.value;
+                colorCodeElement.value = `${nearestColor.value} ${nearestColor.name};
             }
         }
 
